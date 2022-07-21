@@ -8,6 +8,6 @@ public class UserController {
 
     @GetMapping("/api/users")
     public String[] getUser() {
-        return new String[]{"Shabbir", "Nikhil","Shivam"};
+        return new String[]{"This is", "Protected","Resource"};
     }
 }
