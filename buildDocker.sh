@@ -1,8 +1,8 @@
 cd Oauth-authorization-server
-./mvnw -DskipTests clean verify
+docker build -t authorization-server .
 cd ..
 cd Oauth-resource-server/
-./mvnw -DskipTests clean verify
+docker build -t resource-server .
 cd ..
 cd spring-security-client/
-./mvnw -DskipTests clean verify
+docker build -t client-server .
